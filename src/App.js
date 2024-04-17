@@ -1,5 +1,3 @@
-// src/App.js
-
 import React, { useState } from 'react';
 import MarkdownEditor from './MarkdownEditor';
 import LivePreview from './LivePreview';

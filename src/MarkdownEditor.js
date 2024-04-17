@@ -26,7 +26,7 @@ const MarkdownEditor = ({ onHtmlChange }) => {
       <textarea
         value={markdown}
         onChange={handleChange}
-        placeholder="Type Markdown here..."
+        placeholder="Type Content here..."
         rows={10}
         cols={50}
       />
