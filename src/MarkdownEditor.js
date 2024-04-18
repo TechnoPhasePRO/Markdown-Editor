@@ -21,15 +21,14 @@ const MarkdownEditor = ({ onHtmlChange }) => {
   };
 
   return (
-    <div>
-      {error && <div>Error: {error}</div>}
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
       <textarea
         value={markdown}
         onChange={handleChange}
-        placeholder="Type Content here..."
-        rows={10}
-        cols={50}
+        placeholder="Type Markdown Text here..."
+        style={{ flex: 1, resize: 'none' }}
       />
+      {error && <div>Error: {error}</div>}
     </div>
   );
 };
